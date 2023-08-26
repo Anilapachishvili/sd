@@ -1,0 +1,554 @@
+*{ 
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: linear-gradient(100deg, rgb(191, 62, 111), rgb(179, 104, 132));
+}
+
+.position{
+    display: flex;
+    position: relative;
+    top: 150px;
+    left: 70px;
+    font-size: 20px;
+    width: 650px;
+    height: 200px;
+    background-image: linear-gradient(20deg, rgb(234, 132, 16), rgb(182, 77, 115));
+    border-radius: 50px;
+    border: none;
+    box-shadow: red 0px 24px 48px;
+}
+
+h3{
+    position: relative;
+    left: 30px;
+    top: 50px;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+    font-size: 30px;
+    position: relative;
+    top: 0px;
+}
+
+header{
+    width: 100%;
+    height: 80px;
+    background: rgb(131, 58, 180);
+    background: linear-gradient(90deg, rgba(131, 58, 180, 1) 0%, rgba(253, 29, 29, 1) 50%, rgba(252, 176, 69, 1) 100%);
+}
+
+li{
+    list-style: none;
+    margin-top: -50px;
+    margin-left: -60px;
+}
+
+ul{
+    display: flex;
+    flex-direction: row;
+    gap: 80px;
+}
+
+.produqcia{
+    color: white;
+    font-size: 30px;
+    margin-top: -50px;
+    margin-left: -20px;
+}
+
+.left{
+    margin-left: 230px;
+}
+
+.flex{
+    display: flex;
+    flex-direction: row;
+    gap: 150px;
+}
+
+.l img{
+    width: 100px;
+    height: 70px;
+    border-radius: 15px;
+    position: relative;
+    right: 150px;
+    top: 5px;
+}
+
+/* Media Queries */
+@media screen and (max-width: 470px){
+    .position{
+      width: 500px;
+      height: 450px;
+
+    }
+    h3{
+        position: relative;
+         margin-top: 80px;
+    }
+    body{
+        background-image: linear-gradient(0deg, rgb(191, 62, 111), rgb(179, 104, 132));
+    }
+    header{
+
+        width: 200%;
+        background: rgb(131, 58, 180);
+        background: linear-gradient(90deg, rgba(131, 58, 180, 1) 0%, rgba(253, 29, 29, 1) 50%, rgba(252, 176, 69, 1) 100%);
+    }
+    }
+    @media screen and (max-width: 400px){
+      .produqcia{
+        margin-top: -65px;
+      }
+      a{
+        margin-left: -10px;
+      }
+    }
+  
+@media screen and (max-width: 768px) {
+    .position{
+        width: 100%;
+        left: 0;
+        top: 100px;
+    }
+   header{
+    width: 100%;
+   }
+    h3{
+        left: 15px;
+        top: 20px;
+    }
+
+    .flex{
+        flex-direction: column;
+        gap: 20px;
+    }
+    .produqcia{
+        position: relative;
+        right: 100px;
+        font-size: 20px;
+        top: 15px;
+    }
+    a{
+        width: 0px;
+        position: relative;
+        right: 100px;
+        font-size: 20px;
+        top: 0px;
+    }
+    .l img{
+        position: relative;
+        width: 80px;
+        height: 50px;
+        left: -220px;
+        top: 15px;
+    }
+}
+.container{
+    height: 520px;
+    width: 360px;
+    border-radius: 8px;
+    position: absolute;
+    top: 30%;
+    left: 30%;
+    transform: translate(-50%,50%);
+    border: 10px solid rgb(212, 20, 142);
+    box-shadow: 10px 25px 28px rgb(0,0,0,0.3);
+    overflow: hidden;
+    
+}
+.txt{
+    position: relative;
+    color: white;
+    font-size: 18px;
+}
+.img-container{
+    width: 100%;
+    height: 350px;
+    display: flex;
+    animation: slide 10s infinite;
+}
+
+@keyframes slide{
+    0%{
+        transform: translateX(0);
+    }
+    25%{
+        transform: translateX(0);
+    }
+    30%{
+        transform: translateX(-100%);
+    }
+    50%{
+        transform: translateX(-100%);
+    }
+    55%{
+        transform: translateX(-200%);
+    }
+    75%{
+        transform: translateX(-200%);
+    }
+    80%{
+        transform: translateX(-300%);
+    }
+  
+}
+.fl{
+    display: flex;
+    flex-direction: column;
+}
+.second{
+    height: 520px;
+    width: 360px;
+    border-radius: 8px;
+    position: absolute;
+    top: 30%;
+    left: 105%;
+    transform: translate(-50%,50%);
+    border: 10px solid rgb(212, 20, 142);
+    box-shadow: 10px 25px 28px rgb(0,0,0,0.3);
+    overflow: hidden;
+}
+.imgsecond{
+    width: 100%;
+    height: 350px;
+    display: flex;
+    animation: slide 10s infinite;
+}
+.secondtext{
+    position: relative;
+    color: white;
+    font-size: 18px;
+}
+.third{
+    height: 520px;
+    width: 360px;
+    border-radius: 8px;
+    position: absolute;
+    top: 30%;
+    left: 180%;
+    transform: translate(-50%,50%);
+    border: 10px solid rgb(212, 20, 142);
+    box-shadow: 10px 25px 28px rgb(0,0,0,0.3);
+    overflow: hidden;
+}
+.imgthird{
+    width: 100%;
+    height: 350px;
+    display: flex;
+    animation: slide 10s infinite;
+}
+.t{
+    position: relative;
+    color: white;
+    font-size: 18px;
+}
+.fourth{
+    height: 520px;
+    width: 360px;
+    border-radius: 8px;
+    position: absolute;
+    top: 330%;
+    left: 30%;
+    transform: translate(-50%,50%);
+    border: 10px solid rgb(212, 20, 142);
+    box-shadow: 10px 25px 28px rgb(0,0,0,0.3);
+    overflow: hidden;
+
+
+}
+.imgfourth{
+    width: 100%;
+    height: 350px;
+    display: flex;
+    animation: slide 10s infinite;
+
+}
+.fourtht{
+    position: relative;
+    color: white;
+    font-size: 16px;
+}
+.fifth{
+    height: 520px;
+    width: 360px;
+    border-radius: 8px;
+    position: absolute;
+    top: 330%;
+    left: 105%;
+    transform: translate(-50%,50%);
+    border: 10px solid rgb(212, 20, 142);
+    box-shadow: 10px 25px 28px rgb(0,0,0,0.3);
+    overflow: hidden;
+}
+.imgfifth{
+    width: 100%;
+    height: 350px;
+    display: flex;
+    animation: slide 10s infinite;
+}
+.fiftht{
+    position: relative;
+    color: white;
+    font-size: 20px;
+}
+.sixth{
+    height: 520px;
+    width: 360px;
+    border-radius: 8px;
+    position: absolute;
+    top: 330%;
+    left: 180%;
+    transform: translate(-50%,50%);
+    border: 10px solid rgb(212, 20, 142);
+    box-shadow: 10px 25px 28px rgb(0,0,0,0.3);
+    overflow: hidden;
+}
+.imgsixth{
+    width: 100%;
+    height: 350px;
+    display: flex;
+    animation: slide 10s infinite;
+}
+.sixtht{
+    position: relative;
+    color: white;
+    font-size: 16px;
+}
+.seven{
+    height: 520px;
+    width: 360px;
+    border-radius: 8px;
+    position: absolute;
+    top: 630%;
+    left: 30%;
+    transform: translate(-50%,50%);
+    border: 10px solid rgb(212, 20, 142);
+    box-shadow: 10px 25px 28px rgb(0,0,0,0.3);
+    overflow: hidden;
+}
+.imgseven{
+    width: 100%;
+    height: 350px;
+    display: flex;
+    animation: slide 10s infinite;
+}
+.sevent{
+    position: relative;
+    color: white;
+    font-size: 20px;
+}
+.eight{
+    height: 520px;
+    width: 360px;
+    border-radius: 8px;
+    position: absolute;
+    top: 630%;
+    left: 105%;
+    transform: translate(-50%,50%);
+    border: 10px solid rgb(212, 20, 142);
+    box-shadow: 10px 25px 28px rgb(0,0,0,0.3);
+    overflow: hidden;
+}
+.imgeihgt{
+    width: 100%;
+    height: 350px;
+    display: flex;
+    animation: slide 10s infinite;
+}
+.eightt{
+    position: relative;
+    color: white;
+    font-size: 18px;
+}
+.nine{
+    height: 520px;
+    width: 360px;
+    border-radius: 8px;
+    position: absolute;
+    top: 630%;
+    left: 180%;
+    transform: translate(-50%,50%);
+    border: 10px solid rgb(212, 20, 142);
+    box-shadow: 10px 25px 28px rgb(0,0,0,0.3);
+    overflow: hidden;
+}
+.imgnine{
+    width: 100%;
+    height: 350px;
+    display: flex;
+    animation: slide 10s infinite;
+}
+.ninet{
+    position: relative;
+    color: white;
+    font-size: 20px;
+}
+.ten{
+    height: 520px;
+    width: 360px;
+    border-radius: 8px;
+    position: absolute;
+    top: 930%;
+    left: 30%;
+    transform: translate(-50%,50%);
+    border: 10px solid rgb(212, 20, 142);
+    box-shadow: 10px 25px 28px rgb(0,0,0,0.3);
+    overflow: hidden;
+}
+.imgten{
+    width: 100%;
+    height: 350px;
+    display: flex;
+    animation: slide 10s infinite;
+}
+.tent{
+    position: relative;
+    color: white;
+    font-size: 20px;
+}
+.eleven{
+    height: 520px;
+    width: 360px;
+    border-radius: 8px;
+    position: absolute;
+    top: 930%;
+    left: 105%;
+    transform: translate(-50%,50%);
+    border: 10px solid rgb(212, 20, 142);
+    box-shadow: 10px 25px 28px rgb(0,0,0,0.3);
+    overflow: hidden;
+}
+.imgeleven{
+    width: 100%;
+    height: 350px;
+    display: flex;
+    animation: slide 10s infinite;
+}
+.elevent{
+    position: relative;
+    color: white;
+    font-size: 16px;
+}
+.twelve{
+    height: 520px;
+    width: 360px;
+    border-radius: 8px;
+    position: absolute;
+    top: 930%;
+    left: 180%;
+    transform: translate(-50%,50%);
+    border: 10px solid rgb(212, 20, 142);
+    box-shadow: 10px 25px 28px rgb(0,0,0,0.3);
+    overflow: hidden;
+}
+.imgtwelve{
+    width: 100%;
+    height: 350px;
+    display: flex;
+    animation: slide 10s infinite;
+}
+.twevet{
+    position: relative;
+    color: white;
+    font-size: 16px;
+}
+.cameti{
+    height: 520px;
+    width: 360px;
+    border-radius: 8px;
+    position: absolute;
+    top: 1230%;
+    left: 30%;
+    transform: translate(-50%,50%);
+    border: 10px solid rgb(212, 20, 142);
+    box-shadow: 10px 25px 28px rgb(0,0,0,0.3);
+    overflow: hidden;
+}
+.imgcameti{
+    width: 100%;
+    height: 350px;
+    display: flex;
+    animation: slide 10s infinite;
+}
+.cametit{
+    position: relative;
+    color: white;
+    font-size: 15px;
+}
+.liter{
+    height: 520px;
+    width: 360px;
+    border-radius: 8px;
+    position: absolute;
+    top: 1230%;
+    left: 105%;
+    transform: translate(-50%,50%);
+    border: 10px solid rgb(212, 20, 142);
+    box-shadow: 10px 25px 28px rgb(0,0,0,0.3);
+    overflow: hidden;
+}
+.imgliter{
+    width: 100%;
+    height: 350px;
+    display: flex;
+    animation: slide 10s infinite;
+}
+.litert{
+    position: relative;
+    color: white;
+    font-size: 20px;
+}
+.color{
+    height: 520px;
+    width: 360px;
+    border-radius: 8px;
+    position: absolute;
+    top: 1230%;
+    left: 180%;
+    transform: translate(-50%,50%);
+    border: 10px solid rgb(212, 20, 142);
+    box-shadow: 10px 25px 28px rgb(0,0,0,0.3);
+    overflow: hidden;
+}
+.imgcolor{
+    width: 100%;
+    height: 350px;
+    display: flex;
+    animation: slide 10s infinite;
+}
+.colort{
+    position: relative;
+    color: white;
+    font-size: 20px;
+}
+.stone{
+    height: 520px;
+    width: 360px;
+    border-radius: 8px;
+    position: absolute;
+    top: 1530%;
+    left: 30%;
+    transform: translate(-50%,50%);
+    border: 10px solid rgb(212, 20, 142);
+    box-shadow: 10px 25px 28px rgb(0,0,0,0.3);
+    overflow: hidden;
+}
+.imgstone{
+    width: 100%;
+    height: 350px;
+    display: flex;
+    animation: slide 10s infinite;
+}
+.stonet{
+    position: relative;
+    color: white;
+    font-size: 20px;
+}
